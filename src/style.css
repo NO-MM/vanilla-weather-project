@@ -1,6 +1,6 @@
 body {
     background-color:rgb(230, 234, 255);
-  font-family: "Roboto"; sans-serif;
+  font-family: "Roboto", sans-serif;
 }
     
 a {
@@ -16,12 +16,9 @@ a {
     padding:30px
 }
 
-hearder {
-border-buttom: 1px solid rgb(230, 235, 255);
-    padding: 30px 0 0 0;
-    text-align: center;
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.6);
+header {
+border-bottom: 1px solid rgb(230, 235, 255);
+    padding: 0 0 30px 0;
 }
 
 .search-input {
@@ -65,30 +62,31 @@ line-height: 24px;
 font-weight: 500;
 }
 
+.weather-details strong {
+color: rgb(250, 95, 95)
+}
 
 .weather-temperature-container {
 display: flex;
 }
 
 .weather-icon {
-font-size: 44px;
-margin-top: 22px;
+width: 88px;
+height: 88px;
 }
 
 .weather-temperature {
     font-size: 88px;
-    margin-left: 10px;
+    line-height: 88px;
     font-weight: bold;
 }
 
 .weather-unit {
-margin-top: 16px;
+margin-top: 6px;
 font-size: 28px;
 }
 
-.weather-details strong {
-color: rgb(250, 95, 95)
-}
+
 
 footer {
     border-top: 1px solid rgb(230, 235, 255);

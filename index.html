@@ -10,35 +10,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>My App</title>
   </head>
   <body>
     <div class="vanilla-weather-app">
-      <hearder>
-        <form class="search-form">
+      <header>
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
-            required
+            required 
+            id="search-input"
             class="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
-      </hearder>
+      </header>
 
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city">Paris</h1>
+            <h1 class="weather-city" id="city"></h1>
             <p class="weather-details">
-              Tuesday 14:49, scatted clouds
+              <span id="time"></span>
+              <span id="description"></span>
               <br />
-              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              Humidity: <strong id="humidity"></strong>, Wind: 
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-temperature-container">
-          <div class="weather-icon">☀️</div>
-          <div class="weather-temperature">12</div>
+          <div id="icon"></div>
+          <div class="weather-temperature" id="temperature"></div>
           <div class="weather-unit">°C</div>
         </div>
       </main>
@@ -63,5 +67,6 @@
         </p>
       </footer>
     </div>
-  </body>
+<script src="src/java.js"></script>  
+</body>
 </html>
